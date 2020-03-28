@@ -1,0 +1,171 @@
+
+.look {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.look__product {
+    position: absolute;
+    top: 152px;
+    left: 50%;
+    margin-left: -200px;
+}
+
+.look__info {
+    width: 446px;
+    height: 550px;
+    padding: 40px 70px 40px 60px;
+    margin-top: 78px;
+    margin-bottom: 130px;
+    margin-left: calc(100% - 360px);
+    background-image: url("../media/look/list.png");
+    background-repeat: no-repeat;
+
+    & p {
+        margin-bottom: 20px;
+        font-size: 17px;
+        font-weight: 500;
+        line-height: 22px;
+
+        &:first-child {
+            font-size: 25px;
+            font-weight: 700;
+            color: #567b13;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.look__box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #f8f0e6;
+    border-radius: 5px;
+}
+
+.look__title {
+    max-width: 380px;
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 51px;
+    text-transform: uppercase;
+
+    & mark {
+        color: #8a3cb3;
+    }
+}
+
+.look__data {
+    max-width: 490px;
+}
+
+.look__data-event {
+    position: relative;
+    max-width: 190px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: 500;
+
+    &::before {
+        position: absolute;
+        top: 35px;
+        right: -57px;
+        width: 24px;
+        height: 72px;
+        content: '';
+        background-image: url("../media/look/arrow.png");
+        background-repeat: no-repeat;
+    }
+}
+
+.look__data-box {
+    display: flex;
+}
+
+.look__data-call {
+    position: relative;
+    margin-right: 45px;
+
+    & input {
+        width: 218px;
+        height: 60px;
+        padding: 0 20px;
+        font-size: 26px;
+        font-weight: 500;
+        background-color: #fff;
+        border: 2px solid #eae1d5;
+        border-radius: 50px;
+    }
+
+    &::before {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 21px;
+        height: 20px;
+        content: '';
+        background-image: url("../media/look/call.png");
+        background-repeat: no-repeat;
+    }
+}
+
+.look__data-info {
+    font-size: 13px;
+    font-weight: 500;
+
+    & mark {
+        font-weight: 700;
+        color: #8a3cb3;
+    }
+}
+
+.look__amulets {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 35px;
+}
+
+.look__amulets-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 208px;
+    height: 208px;
+    cursor: pointer;
+    background-color: #000;
+    border: 5px solid #c8bcad;
+    border-radius: 50%;
+    transition: .3s;
+
+    &:hover {
+        border: 16px solid #fff;
+        transform: scale(1.1);
+    }
+
+    &:nth-child(1) {
+        background: rgb(78, 55, 95);
+        background: linear-gradient(130deg, rgba(78, 55, 95, 1) 0%, rgba(211, 55, 123, 1) 100%);
+    }
+
+    &:nth-child(2) {
+        background: rgb(206, 91, 233);
+        background: linear-gradient(130deg, rgba(206, 91, 233, 1) 0%, rgba(66, 77, 133, 1) 100%);
+    }
+
+    &:nth-child(3) {
+        background: rgb(70, 221, 130);
+        background: linear-gradient(130deg, rgba(70, 221, 130, 1) 0%, rgba(40, 119, 126, 1) 100%);
+    }
+
+    &:nth-child(4) {
+        background: rgb(168, 92, 199);
+        background: linear-gradient(130deg, rgba(168, 92, 199, 1) 0%, rgba(238, 92, 56, 1) 100%);
+    }
+}
