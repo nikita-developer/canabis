@@ -1,5 +1,6 @@
 
 .face {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -8,9 +9,14 @@
 
 .face__product {
     position: absolute;
-    bottom: 105px;
+    bottom: -160px;
     left: 50%;
     z-index: -1;
+    width: 931px;
+    height: 711px;
+    background-image: url("../media/face/product.png");
+    background-repeat: no-repeat;
+    background-position: center;
     transform: translateX(-50%);
 }
 
