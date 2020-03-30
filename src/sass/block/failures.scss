@@ -47,11 +47,16 @@
 
 .failures__box {
     display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+    margin-left: -10px;
 }
 
 .failures__item {
     position: relative;
-    width: 20%;
+    width: 18%;
+    margin-right: 10px;
+    margin-left: 10px;
     font-size: 20px;
     font-weight: 700;
     line-height: 18px;
@@ -67,8 +72,69 @@
         content: '';
         background-color: #e6db2b;
     }
+}
 
-    & + & {
-        margin-left: 25px;
+@media (max-width: 1030px) {
+    .failures__title {
+        position: static;
+        max-width: 100%;
+
+        & span {
+            display: inline;
+
+            &:first-child {
+                position: static;
+                font-size: inherit;
+                line-height: inherit;
+            }
+
+            &:last-child {
+                font-size: inherit;
+                line-height: inherit;
+            }
+        }
+
+        & mark {
+            display: inline;
+            font-size: inherit;
+        }
+    }
+
+    .failures__box {
+        margin-right: -7px;
+        margin-left: -7px;
+    }
+
+    .failures__item {
+        margin-right: 7px;
+        margin-left: 7px;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .failures__item {
+        width: 30%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .failures__box {
+        justify-content: space-between;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .failures__item {
+        width: 45%;
+        margin-right: 0;
+        margin-left: 0;
+        text-align: center;
+
+        &::before {
+            left: 50%;
+            margin-left: -29px;
+        }
     }
 }

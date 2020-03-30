@@ -30,7 +30,7 @@
     &_face-footer {
         z-index: 1;
         padding-top: 200px;
-        
+
         &::before {
             position: absolute;
             bottom: -177px;
@@ -138,5 +138,119 @@
             background-repeat: no-repeat;
             background-position: center bottom;
         }
+    }
+}
+
+@media (max-width: 1030px) {
+    .section {
+        padding-top: 120px;
+        padding-bottom: 120px;
+
+        &_face {
+            padding-top: 60px;
+            background-image: url("../media/section/face-1030.jpg");
+        }
+
+        &_face-header {
+            padding-bottom: 170px;
+
+            &::before {
+                bottom: -90px;
+                height: 271px;
+                background-image: url("../media/section/face-cloud-1030.png");
+            }
+        }
+
+        &_face-footer {
+            padding-bottom: 170px;
+
+            &::before {
+                bottom: -90px;
+                height: 271px;
+                background-image: url("../media/section/face-cloud-1030.png");
+            }
+        }
+
+        &_failures {
+            background-image: url("../media/section/failures-1030.jpg");
+
+            &::before {
+                bottom: -98px;
+                height: 300px;
+                background-image: url("../media/section/failures-cloud-1030.png");
+            }
+        }
+
+        &_trouble {
+            background-image: url("../media/section/trouble-1030.jpg");
+
+            &::before {
+                bottom: -98px;
+                height: 241px;
+                background-image: url("../media/section/trouble-cloud-1030.png");
+            }
+        }
+
+        &_help {
+            background-image: url("../media/section/help-1030.jpg");
+
+            &::before {
+                bottom: -98px;
+                height: 241px;
+                background-image: url("../media/section/help-cloud-1030.png");
+            }
+        }
+    }
+
+    .section__title {
+        font-size: 48px;
+        line-height: 1;
+
+        & span {
+            font-size: inherit;
+            line-height: inherit;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding-top: 60px;
+        padding-bottom: 60px;
+
+        &::before {
+            display: none;
+        }
+
+        &_face {
+            background-image: url("../media/section/face-768.jpg");
+        }
+
+        &_failures {
+            background-image: url("../media/section/failures-768.jpg");
+        }
+
+        &_trouble {
+            background-image: url("../media/section/trouble-768.jpg");
+        }
+
+        &_help {
+            background-image: url("../media/section/help-768.jpg");
+        }
+
+        &_look {
+            background-image: url("../media/section/look-768.jpg");
+        }
+    }
+
+    .section__title {
+        font-size: 32px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .section__title {
+        font-size: 26px;
     }
 }
