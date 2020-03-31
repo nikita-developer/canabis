@@ -31,4 +31,8 @@ $(document).ready(function() {
             timerId = setTimeout(tick, 1000);
         }, 1000)
     }
+
+    /*init smoke*/
+    init()
+
 });

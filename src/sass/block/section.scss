@@ -141,6 +141,15 @@
     }
 }
 
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
 @media (max-width: 1030px) {
     .section {
         padding-top: 120px;
@@ -199,6 +208,10 @@
                 height: 241px;
                 background-image: url("../media/section/help-cloud-1030.png");
             }
+        }
+
+        &_look {
+            background-image: url("../media/section/look-1030.jpg");
         }
     }
 
