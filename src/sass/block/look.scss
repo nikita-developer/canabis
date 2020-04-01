@@ -117,6 +117,10 @@
         background-image: url("../media/look/call.png");
         background-repeat: no-repeat;
     }
+
+    &_active {
+        animation: 1.2s ease-in-out 0s normal none 2 running trambling-animation;
+    }
 }
 
 .look__data-info {
@@ -149,6 +153,11 @@
     transition: .3s;
 
     &:hover {
+        border: 16px solid #fff;
+        transform: scale(1.1);
+    }
+
+    &_active {
         border: 16px solid #fff;
         transform: scale(1.1);
     }
@@ -316,5 +325,23 @@
     .look__data-call {
         max-width: 218px;
         margin-bottom: 15px;
+    }
+}
+
+@keyframes trambling-animation {
+    0%,
+    50%,
+    100% {
+        transform: rotate(0deg);
+    }
+
+    10%,
+    30% {
+        transform: rotate(-10deg);
+    }
+
+    20%,
+    40% {
+        transform: rotate(10deg);
     }
 }
